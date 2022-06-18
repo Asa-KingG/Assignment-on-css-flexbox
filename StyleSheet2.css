@@ -1,0 +1,52 @@
+﻿{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 100%, 0%);
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-area: "header header menu" "main   right  right" "main   footer footer";
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+    main div {
+        padding: 2em;
+        text-align: center;
+        border-radius: 5px
+    }
+
+div.header {
+    background-color: hsl(0, 100%, 50%);
+    padding: 2em;
+    grid area: header;
+}
+
+div.menu {
+    background-color: hsl(34, 100%, 54%);
+    grid area: menu;
+    margin-left: 20px;
+}
+
+div.main {
+    background-color: hsl(114, 100%, 31%);
+    grid area: main;
+}
+
+div.right {
+    background-color: hsl(225, 100%, 50%);
+    grid area: right;
+}
+
+div.footer {
+    background-color: hsl(253, 100%, 50%);
+    grid area: footer;
+}
